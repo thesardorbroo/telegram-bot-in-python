@@ -4,7 +4,7 @@ from keys import *
 from config import *
 from texts import main_texts
 
-# Function insert_adding is perfectly
+
 async def insert_adding(user__id):
     if user__id.first_name != None or user__id.last_name != None:
             fullname = f"{user__id.first_name} {user__id.last_name}"
@@ -12,12 +12,12 @@ async def insert_adding(user__id):
         fullname = f"{user__id.username}"
     await db.add_user_into_db(user__id.id,fullname)
     
-# Function creating_buttons is perfectly    
+    
 async def creating_buttons(text,user__id, lang):
     await bot.send_photo(user__id,open(foods_images[text],"rb"))
     await bot.send_message(user__id,main_texts[lang]["Please choose"],reply_markup=abfoods[text])
 
-# Function booking isn't ready, now!
+
 async def booking(user_id: int, lang, uid,delivery_service = None):
     paper = ""
     summa = 0
