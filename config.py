@@ -2,8 +2,6 @@ from aiogram import Dispatcher,Bot
 from aiogram.types import Message
 from bot_database import CafeDB
 
-TOKEN = '5297025716:AAHWLEmC1zSHc2XGRI9hohW_fqPHcWzD7jw'
-# TOKEN = '5223830127:AAFNATuXTWv_aQv4ORzU7-wFQHBbRhzvuew'
 word = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890"
 
 bot = Bot(TOKEN,parse_mode='html')
